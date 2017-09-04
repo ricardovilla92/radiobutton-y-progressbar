@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dev4u.hv.guia2_moviles.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+        android:id="@+id/txtURL"
+        android:gravity="center"
+        android:hint="Inserta la URL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rgCambio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCambiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cambiar Nombre" />
+
+            <RadioButton
+                android:id="@+id/rbNoCambiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No cambiar nombre" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtNombreArchivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="nombre del Archivo"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <ProgressBar
+            android:id="@+id/pbDescarga"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/lblEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Estado"
+            android:textSize="24sp" />
+
+        <Button
+        android:id="@+id/btnDescargar"
+        android:text="Descargar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
